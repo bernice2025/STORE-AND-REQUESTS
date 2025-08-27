@@ -46,6 +46,7 @@ export default {
     components: {
         Postcard: post_card
     },
+    
     methods: {
         getusersDetails() {
             axios
@@ -56,9 +57,6 @@ export default {
             .catch((err) => {
                 console.log("REQUEST ERROR : ", err)
             })
-        },
-        modifier() {
-            this.$store.state.users.user.username = ""
         }
     },
     mounted() {

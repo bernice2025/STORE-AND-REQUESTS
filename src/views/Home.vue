@@ -21,7 +21,7 @@
           </button>
         </div>
         <div class="grid-users">
-          <user_table v-for="user in $store.state.users.slice(0, 2)" :user="user"/>
+          <user_table />
         </div>
       </div>
       <div>
